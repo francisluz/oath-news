@@ -68,7 +68,10 @@
     }
     .display-news{
         width: 50%;
-        height: 120px;
+        height: 140px;
+    }
+    .list-post-item{
+        height: auto !important;
     }
     .two-col {
         width: 100% !important;
@@ -170,6 +173,9 @@
     font-size: 12px;
 }
 
+.list-post-item{
+    height: 230px;
+}
 .two-col {
     width: 50%;
     float: left;
