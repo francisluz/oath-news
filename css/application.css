@@ -1,0 +1,263 @@
+.homepage{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header-container{
+    min-height: 60px;
+}
+.logo-header, svg{
+    height: 40px;
+    text-decoration-line: none;
+    margin-top: 10px;
+}
+
+#carousel{
+    background-color: #717171;
+}
+.slideshow-container {
+    max-width: 100%;
+    max-height: 420px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.slides {
+    display: none;
+}
+
+/* Format Slide */
+.slides h1 {
+    padding: 0 12px;
+}
+
+.slides a {
+    text-decoration-line: none;
+    color:#000000;
+}
+
+.slides a:hover {
+    text-decoration-line: underline;
+}
+
+.slides img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+}
+
+.slides p {
+    font-size: 18px;
+    padding: 0 12px;
+}
+
+.display-news{
+    position: absolute;
+    background-color: #ffffff;
+    width: 40%;
+    height: 200px;
+    bottom: 30px;
+    text-align: left;
+}
+
+@media screen and (max-width: 992px){
+    .slides h1{
+        font-size: 12px;
+    }
+    .slides p{
+        font-size: 10px;
+    }
+    .display-news{
+        width: 50%;
+        height: 120px;
+    }
+    .two-col {
+        width: 100% !important;
+    }
+    .newsletter-signup-form input{
+        width: 100% !important;
+    }
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    /* position: absolute; */
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    text-decoration-line: none;
+}
+
+/* Position the "next button" to the right */
+.prev {
+    left: 0
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-decoration-line: none !important;
+}
+
+/* The dots/bullets/indicators */
+#dots {
+    margin-top: -20px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #39F;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* Daily buzz */
+.daily-buzz {
+    display: table;
+    clear: both;
+}
+.daily-buzz h2 {
+    font-size: 12px;
+}
+.daily-buzz p {
+    font-size: 10px;
+}
+.daily-buzz img {
+    width: 50%;
+    float: left;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+.daily-buzz a {
+    font-size: 12px;
+}
+
+.two-col {
+    width: 50%;
+    float: left;
+}
+
+.m-make-homepage {
+    padding: 20px;
+    text-align: center;
+    background-color:#39F;
+}
+
+.m-side-nav__link {
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    padding: 20px;
+}
+
+.l-footer-container {
+    padding: 20px;
+}
+
+.m-footer__links a {
+    text-decoration-line: none;
+    font-size: 12px;
+    color: #717171;
+    width: 100%;
+}
+
+.newsletter-signup-form {
+    border: none;
+    background-color: #ededed;
+    padding: 20px;
+}
+
+.newsletter-signup-form input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+}
+
+.aol-btn {
+    width: 20%;
+    padding: 10px;
+    font-size: 15px;
+    background-color: #39F;
+    color: #ffffff;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
